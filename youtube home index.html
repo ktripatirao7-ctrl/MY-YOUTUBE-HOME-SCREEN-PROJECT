@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YOUTUBE CLONE</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search {
+    width: 50%;
+    display: flex;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+}
+
+.search button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.profile {
+    font-size: 24px;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 220px;
+    background: #fff;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: #eee;
+}
+
+/* Content */
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Videos */
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 0 10px 10px;
+    color: #555;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">▶ YouTube</div>
+
+    <div class="search">
+        <input type="text" placeholder="Search">
+        <button>🔍</button>
+    </div>
+
+    <div class="profile">👤</div>
+
+</header>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <ul>
+            <li>🏠 HOME</li>
+            <li>🔥 TRENDING</li>
+            <li>🎮 GAMING</li>
+            <li>🎵 MUSIC</li>
+            <li>📺 SUBSCRIPTIONS</li>
+            <li>📚 LIBRARY</li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <div class="videos">
+
+            <div class="card">
+                <img src="https://placehold.co/300x180" alt="Video 1">
+                <h3>Sample Video 1</h3>
+                <p>Channel Name • 1M views</p>
+            </div>
+
+            <div class="card">
+                <img src="https://placehold.co/300x180" alt="Video 2">
+                <h3>Sample Video 2</h3>
+                <p>Channel Name • 500K views</p>
+            </div>
+
+            <div class="card">
+                <img src="https://placehold.co/300x180" alt="Video 3">
+                <h3>Sample Video 3</h3>
+                <p>Channel Name • 250K views</p>
+            </div>
+
+            <div class="card">
+                <img src="https://placehold.co/300x180" alt="Video 4">
+                <h3>Sample Video 4</h3>
+                <p>Channel Name • 80K views</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
